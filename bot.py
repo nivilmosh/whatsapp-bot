@@ -10,7 +10,7 @@ load_dotenv()
 
 WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN")
 PHONE_NUMBER_ID = os.getenv("PHONE_NUMBER_ID")
-CLAUDE_CLIENT = anthropic.Anthropic(api_key=os.getenv("CLAUDE_API_KEY"))Rnvww5_K_RPxOCEMiNiRYnwRg2LcDnm5ffGrc9CV0rdzkIVxmCoJKgU-dpGc5qc8MPXg-X8cABQAA")
+CLAUDE_CLIENT = anthropic.Anthropic(api_key=os.getenv("CLAUDE_API_KEY"))
 
 def send_whatsapp(to, text):
     url = f"https://graph.facebook.com/v18.0/{PHONE_NUMBER_ID}/messages"
